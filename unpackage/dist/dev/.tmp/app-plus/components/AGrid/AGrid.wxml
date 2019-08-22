@@ -1,0 +1,1 @@
+<view class="a-grid"><block wx:for="{{gridData}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="item"><view class="icon"><image style="width:60rpx;height:60rpx;" mode="aspectFill" src="{{item.icon}}"></image></view><view class="text">{{''+item.text+''}}</view></view></block></view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "a-header": "/components/AHeader/AHeader",
+    "a-cell": "/components/ACell/ACell"
+  }
+}

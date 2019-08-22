@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.split-border-attr, .split-border-sm, .split-border-base, .split-border-lg {
+  background: #f9f9f9;
+  width: 100%;
+}
+.split-bottom-border1 {
+  border-bottom: 1px solid #f9f9f9;
+}
+.split-border-sm {
+  height: 10rpx;
+}
+.split-border-base {
+  height: 15rpx;
+}
+.split-border-lg {
+  height: 20rpx;
+}
+.footer-place {
+  height: 99rpx;
+}
+.top-space {
+  height: 80rpx;
+}
+.full-button {
+  height: 99rpx;
+  text-align: center;
+  color: #fff;
+  background: #4cd964;
+  line-height: 99rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+}
+.address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 0;
+      -ms-flex: 0 1 0px;
+          flex: 0 1 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #333;
+  font-size: 28rpx;
+  padding: 16rpx 0;
+}
+.address .left-box {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 0;
+        -ms-flex: 0 1 0px;
+            flex: 0 1 0;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.address .left-box .tip {
+      margin-top: 16rpx;
+      font-size: 24rpx;
+      color: #dd524d;
+      border: 1px solid #dd524d;
+      text-align: center;
+      width: 70rpx;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+.address .center-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 10px;
+}
+.address .center-box .row-line {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+}
+.address .center-box .address-detail {
+      line-height: 1.5;
+      margin-top: 8rpx;
+}
+.order-pro {
+  color: #333;
+  padding: 10px;
+}
+.order-pro .title {
+    font-size: 32rpx;
+    color: #333;
+    padding: 32rpx;
+}
+.order-pro .pro {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #f8f8f8;
+    padding-top: 8rpx;
+    padding-bottom: 8rpx;
+}
+.order-pro .pro .pic-box {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 200rpx;
+          -ms-flex: 0 0 200rpx;
+              flex: 0 0 200rpx;
+      width: 200rpx;
+}
+.order-pro .pro .pro-brief {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      font-size: 28rpx;
+      padding: 0 32rpx;
+}
+.order-pro .pro .pro-brief .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+}
+.order-pro .pro .pro-brief .row.space-between {
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+}
+.order-pro .pro .pro-brief .light {
+        color: #808080;
+}
+.order-pro .pro .pro-brief .price {
+        color: #dd524d;
+}
+.form-massage {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 16rpx 20rpx;
+}
+.form-massage .title {
+    color: #333;
+    font-size: 32rpx;
+}
+.form-massage .body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 10px;
+}
+.form-massage .body input {
+      font-size: 28rpx;
+}
+.footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 99rpx;
+  border-top: solid 1rpx #eee;
+  background-color: #fff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .price-box {
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    font-size: 28rpx;
+    color: #333;
+}
+.footer .price-box .price {
+      color: #dd524d;
+}
+.footer .icons {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80rpx;
+    margin-left: 10rpx;
+}
+.footer .icons .box {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      width: 80rpx;
+      height: 80rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      position: relative;
+}
+.footer .icons .box:first-of-type:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 60rpx;
+        background: #f0f0f0;
+        right: 0;
+        top: 10rpx;
+}
+.footer .icons .box .icon {
+        font-size: 40rpx;
+        color: #828282;
+}
+.footer .icons .box .text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        font-size: 22rpx;
+        color: #666;
+}
+.footer .btn {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer .btn .joinCart,
+    .footer .btn .buy {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: 100%;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+      font-size: 28rpx;
+}
+.footer .btn .joinCart {
+      background-color: #4eb87d;
+      text-align: center;
+      border-right: 1px solid #7fc19c;
+}
+.footer .btn .buy {
+      background-color: #4eb87d;
+      text-align: center;
+}
+

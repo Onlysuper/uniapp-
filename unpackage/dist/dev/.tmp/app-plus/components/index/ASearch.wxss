@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.split-border-attr, .split-border-sm, .split-border-base, .split-border-lg {
+  background: #f9f9f9;
+  width: 100%;
+}
+.split-bottom-border1 {
+  border-bottom: 1px solid #f9f9f9;
+}
+.split-border-sm {
+  height: 10rpx;
+}
+.split-border-base {
+  height: 15rpx;
+}
+.split-border-lg {
+  height: 20rpx;
+}
+.footer-place {
+  height: 99rpx;
+}
+.top-space {
+  height: 30rpx;
+}
+.header-place {
+  height: 100rpx;
+  width: 100%;
+}
+.full-button {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #fff;
+  background: #4cd964;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+}
+.m-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16rpx 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.m-header .m-label {
+    font-size: 32rpx;
+    color: #333;
+}
+.m-header .m-detail {
+    font-size: 28rpx;
+    color: #333;
+}
+.top-search-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #867f80;
+  font-size: 28rpx;
+  padding: 10px 0;
+}
+.top-search-box .local-box {
+    white-space: nowrap;
+    font-size: 28rpx;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100rpx;
+        -ms-flex: 0 0 100rpx;
+            flex: 0 0 100rpx;
+    text-align: center;
+}
+.top-search-box .input-box {
+    padding: 0 10px;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+}
+.top-search-box .input-box .input-back {
+      width: 100%;
+      -webkit-border-radius: 50rpx;
+              border-radius: 50rpx;
+      background: #ececec;
+      padding: 5rpx 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.top-search-box .scan-box {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100rpx;
+        -ms-flex: 0 0 100rpx;
+            flex: 0 0 100rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.top-search-box .scan-box .icon {
+      width: 40rpx;
+      height: 40rpx;
+}
+.top-search-box .scan-box image {
+      width: 100%;
+}
+

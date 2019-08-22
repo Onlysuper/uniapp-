@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "acell": "/components/ACell/ACell"
+  }
+}

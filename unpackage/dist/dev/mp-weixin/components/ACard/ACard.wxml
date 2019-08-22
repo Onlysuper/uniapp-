@@ -1,0 +1,1 @@
+<view class="a-card"><block wx:for="{{gridData}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="item"><view class="img-box"><image style="width:100%;height:180rpx;" mode="aspectFill" src="{{item.icon}}"></image></view></view></block></view>

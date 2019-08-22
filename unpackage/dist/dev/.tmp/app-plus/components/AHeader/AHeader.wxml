@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['back',['$event']]]]]}}" class="header" bindtap="__e"><view><uni-icon vue-id="1" type="arrowleft" size="30" bind:__l="__l"></uni-icon></view></view><view class="header-place"></view></view>

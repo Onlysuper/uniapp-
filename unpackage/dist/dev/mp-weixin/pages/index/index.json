@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "uni-app1",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-swiper-dot": "/node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot",
+    "a-search": "/components/index/ASearch",
+    "a-grid": "/components/AGrid/AGrid",
+    "a-card": "/components/ACard/ACard",
+    "a-title": "/components/ATitle/ATitle"
+  }
+}

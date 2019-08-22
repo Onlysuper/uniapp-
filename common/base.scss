@@ -15,9 +15,14 @@ $header-height:100upx;
     background: $split-color1;
     width:100%;
 }
+.light-text{
+    color:$uni-text-color-placeholder;
+}
+// 1像素底部按钮
 .split-bottom-border1{
     border-bottom: 1px solid $split-color1;
 }
+// 分割条
 .split-border-sm{
     height:10upx;
     @extend .split-border-attr;
@@ -30,12 +35,15 @@ $header-height:100upx;
     height:20upx;
     @extend .split-border-attr;
 }
+// 底部按钮组
 .footer-place{
     height: 99upx;
 }
+// app页面顶部留白
 .top-space{
     height: 30upx;
 }
+// app页面顶部操作条留白
 .header-place{
 	height: $header-height;
 	width: 100%;
@@ -65,4 +73,19 @@ $header-height:100upx;
 		font-size:$uni-font-size-base ;
 		color:$uni-text-color;
 	}
+}
+
+.page-footer {
+	position: fixed;
+	bottom: 0upx;
+	width: 100%;
+	height: 99upx;
+	border-top: solid 1upx #eee;
+	background-color: #fff;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    // padding: 0 $uni-spacing-row-sm;
+    box-sizing: border-box;
 }

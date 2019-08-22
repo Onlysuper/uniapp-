@@ -116,50 +116,64 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.header {
+  background: #4cd964;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 16rpx 20rpx;
+}
+.header .content {
+    font-size: 28rpx;
+    color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.header .content .time {
+      margin-top: 16rpx;
+      color: rgba(255, 255, 255, 0.8);
+}
+.header .icon-pic {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
 .address {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 0;
-      -ms-flex: 0 1 0px;
-          flex: 0 1 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   color: #333;
-  font-size: 28rpx;
-  padding: 16rpx 0;
+  padding: 16rpx 20rpx;
 }
-.address .left-box {
+.address .icon {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 0;
-        -ms-flex: 0 1 0px;
-            flex: 0 1 0;
-    padding-left: 10px;
-    white-space: nowrap;
+    -webkit-flex: 0 0 50rpx;
+        -ms-flex: 0 0 50rpx;
+            flex: 0 0 50rpx;
 }
-.address .left-box .tip {
-      margin-top: 16rpx;
-      font-size: 24rpx;
-      color: #dd524d;
-      border: 1px solid #dd524d;
-      text-align: center;
-      width: 70rpx;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-}
-.address .center-box {
+.address .content {
+    font-size: 28rpx;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 0 10px;
 }
-.address .center-box .row-line {
+.address .content .row-line {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -169,23 +183,35 @@
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
 }
-.address .center-box .address-detail {
-      line-height: 1.5;
+.address .content .detail {
+      color: #808080;
+      font-size: 24rpx;
       margin-top: 8rpx;
 }
 .order-pro {
   color: #333;
   padding: 10px;
+  font-size: 28rpx;
 }
 .order-pro .title {
     font-size: 32rpx;
     color: #333;
     padding: 16rpx 0;
+}
+.order-pro .light {
+    color: #808080;
+}
+.order-pro .price {
+    color: #dd524d;
 }
 .order-pro .pro {
     display: -webkit-box;
@@ -203,10 +229,10 @@
 }
 .order-pro .pro .pic-box {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 200rpx;
-          -ms-flex: 0 0 200rpx;
-              flex: 0 0 200rpx;
-      width: 200rpx;
+      -webkit-flex: 0 0 120rpx;
+          -ms-flex: 0 0 120rpx;
+              flex: 0 0 120rpx;
+      width: 120rpx;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -229,7 +255,6 @@
       -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1;
-      font-size: 28rpx;
       padding: 0 32rpx;
 }
 .order-pro .pro .pro-brief .row {
@@ -249,174 +274,68 @@
               -ms-flex-pack: justify;
                   justify-content: space-between;
 }
-.order-pro .pro .pro-brief .light {
-        color: #808080;
-}
-.order-pro .pro .pro-brief .price {
-        color: #dd524d;
-}
-.form-massage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 16rpx 20rpx;
-}
-.form-massage .title {
-    color: #333;
-    font-size: 32rpx;
-}
-.form-massage .body {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding-left: 10px;
-}
-.form-massage .body input {
-      font-size: 28rpx;
-}
-.footer {
-  position: fixed;
-  bottom: 0rpx;
-  width: 100%;
-  height: 99rpx;
-  border-top: solid 1rpx #eee;
-  background-color: #fff;
-  z-index: 2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.footer .price-box {
-    white-space: nowrap;
+.order-pro .row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px;
-    font-size: 28rpx;
-    color: #333;
+    padding: 16rpx 0;
 }
-.footer .price-box .price {
+.order-pro .pay-box {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.order-message {
+  font-size: 28rpx;
+  padding: 10px;
+}
+.order-message .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8rpx 0;
+}
+.order-message .item .describle {
+      color: #808080;
+      padding-left: 10px;
+}
+.page-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 28rpx;
+  color: #333;
+  padding: 0 10px;
+}
+.page-footer .time {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.page-footer .time .tip {
       color: #dd524d;
+      font-size: 32rpx;
 }
-.footer .icons {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 80rpx;
-    margin-left: 10rpx;
+.page-footer .but {
+    padding: 8rpx 10px;
+    -webkit-border-radius: 12rpx;
+            border-radius: 12rpx;
 }
-.footer .icons .box {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      width: 80rpx;
-      height: 80rpx;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      position: relative;
+.page-footer .but.default {
+      border: 1px solid #c8c7cc;
 }
-.footer .icons .box:first-of-type:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 1px;
-        height: 60rpx;
-        background: #f0f0f0;
-        right: 0;
-        top: 10rpx;
-}
-.footer .icons .box .icon {
-        font-size: 40rpx;
-        color: #828282;
-}
-.footer .icons .box .text {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        width: 100%;
-        font-size: 22rpx;
-        color: #666;
-}
-.footer .btn {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-.footer .btn .joinCart,
-    .footer .btn .buy {
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      height: 100%;
+.page-footer .but.confirm {
+      border: 1px solid #4cd964;
+      background: #4cd964;
       color: #fff;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-align: center;
-      font-size: 28rpx;
-}
-.footer .btn .joinCart {
-      background-color: #4eb87d;
-      text-align: center;
-      border-right: 1px solid #7fc19c;
-}
-.footer .btn .buy {
-      background-color: #4eb87d;
-      text-align: center;
 }
 

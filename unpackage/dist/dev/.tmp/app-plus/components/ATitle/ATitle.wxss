@@ -28,6 +28,9 @@
   background: #f9f9f9;
   width: 100%;
 }
+.light-text {
+  color: #808080;
+}
 .split-bottom-border1 {
   border-bottom: 1px solid #f9f9f9;
 }
@@ -89,6 +92,29 @@
 .m-header .m-detail {
     font-size: 28rpx;
     color: #333;
+}
+.page-footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 99rpx;
+  border-top: solid 1rpx #eee;
+  background-color: #fff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .a-title {
   text-align: center;

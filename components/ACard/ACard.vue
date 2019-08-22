@@ -43,7 +43,7 @@
 		box-sizing: border-box;
 		padding: $uni-spacing-col-base;
 		.img-box{
-			box-shadow:0upx 3upx 10upx #867f80;
+			box-shadow:0upx 2upx 5upx rgba(0,0,0,0.2);
 			border-radius: 10upx;
 			display: flex;
 			flex-direction: column;

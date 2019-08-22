@@ -4,7 +4,7 @@
 		<view class="top-space"></view>
 		<!-- #endif -->
 		<ASearch></ASearch>
-		<view class="banner-container" style="border-radius:20upx;overflow:hidden;box-shadow:0upx 3upx 10upx #867f80">
+		<view class="banner-container">
 			<uni-swiper-dot :info="info" :dotsStyles ="dotsStyles" :current="current" field="content" :mode="mode">
 				<swiper class="swiper-box" @change="change">
 					<swiper-item v-for="(item ,index) in info" :key="index" >
@@ -130,6 +130,9 @@
 <style lang='scss'>
 .swiper-item{
 	text-align: center;
-
+}
+.banner-container{
+	border-radius:20upx;overflow:hidden;
+	box-shadow:0upx 2upx 5upx rgba(0,0,0,0.2)
 }
 </style>
